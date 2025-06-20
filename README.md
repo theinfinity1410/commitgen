@@ -1,16 +1,16 @@
-# 🧠 CommitGenius
+# Phason
 
 > Create meaningful, hilarious, poetic, or professional git commits... from your diffs.
 
-**CommitGenius** is a local LLM-powered CLI tool that turns your staged git diffs into beautiful commit messages in seconds.
+Phason is a local LLM-powered CLI tool that turns your staged git diffs into beautiful commit messages in seconds.
 
-🚀 Powered by [Ollama](https://ollama.com/) running **LLaMA 3**, works fully offline.  
-💬 Supports tones like `funny`, `pro`, `casual`, even `poetic`.  
-🔪 Truncates huge diffs automatically to avoid melting your CPU.
+Powered by [Ollama](https://ollama.com/) running LLaMA 3, works fully offline.  
+Supports tones like `funny`, `pro`, `casual`, even `poetic`.  
+Truncates huge diffs automatically to avoid melting your CPU.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Install [Ollama](https://ollama.com/)
 > Works on macOS, Windows, Linux. No GPU required (but it's faster with one).
@@ -29,30 +29,30 @@ ollama run llama3:8b
 
 You only need to run this once — it will download and cache the model.
 
-### 3. Install CommitGenius
+### 3. Install Phason
 
 ```bash
-npm install -g commitgenius
+npm install -g phason
 ```
 
 Or for local dev:
 
 ```bash
-git clone https://github.com/your-username/commitgenius
-cd commitgenius
+git clone https://github.com/your-username/phason
+cd phason
 npm install
 npm link
 ```
 
 ---
 
-## 🧪 Usage
+## Usage
 
-💻 Generate a commit message from staged changes:
+Generate a commit message from staged changes:
 
 ```bash
 git add .
-commitgen --tone pro
+phason --tone pro
 ```
 
 It will:
@@ -63,7 +63,7 @@ It will:
 
 ---
 
-## 🎭 Tone Options
+## Tone Options
 
 | Tone    | Description                        |
 |---------|------------------------------------|
@@ -73,38 +73,38 @@ It will:
 | poetic  | Shakespeare meets GitHub           |
 
 ```bash
-commitgen --tone funny
+phason --tone funny
 ```
 
 ---
 
 
-## ✂️ Large Diff Support
+## Large Diff Support
 
 By default, we:
 - Truncate diffs to ~6000 characters (safe for most models)
 - Remove blank lines and comments
 - Only keep meaningful context
 
-Use `--full` to disable truncation (⚠️ may break on weaker machines):
+Use `--full` to disable truncation (may break on weaker machines):
 
 ```bash
-commitgen --full --tone casual
+phason --full --tone casual
 ```
 
 ---
 
 
-## 👨‍🔧 Built With
+## Built With
 
-- 🧠 Ollama + LLaMA 3 (`llama3:8b`)
-- ⚡ Node.js CLI
-- 🧼 Simple-git (for git magic)
-- 💀 Humor (because devs deserve joy)
+- Ollama + LLaMA 3 (`llama3:8b`)
+- Node.js CLI
+- Simple-git (for git magic)
+- Humor (because devs deserve joy)
 
 ---
 
-## 📣 Shoutout
+## Shoutout
 
 This is for devs who are tired of writing:
 
@@ -112,16 +112,16 @@ This is for devs who are tired of writing:
 fix: fixed stuff
 ```
 
-Let the AI do it — with ✨ style ✨.
+Let the AI do it — with style.
 
 ---
 
-## 🧞‍♂️ License
+## License
 
 MIT — do whatever you want, just don't make it cringe.
 
 ---
 
-## ❤️ Contribute
+## Contribute
 
 Pull requests welcome. Or just yell at me on Twitter.
