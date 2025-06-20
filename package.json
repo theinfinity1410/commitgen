@@ -2,7 +2,7 @@
   "name": "commitgen",
   "version": "1.0.0",
   "description": "Intelligent commit messages based on your tone",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
     "commitgen": "./dist/index.js"
   },
@@ -12,9 +12,9 @@
     "dev": "tsx src/index.ts",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["git", "commit", "AI", "LLM", "ollama", "cli", "funny"],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "commander": "^14.0.0",
     "gpt-tokenizer": "^3.0.1",
